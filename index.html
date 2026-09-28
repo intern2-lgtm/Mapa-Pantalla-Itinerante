@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Geografía de Encuentros | Fundación Ixcanul</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <main class="home">
+
+        <!-- MAPA -->
+        <div class="map-stage" id="mapStage" aria-hidden="true">
+
+            <img
+                class="map-base"
+                src="media/maps/centroamerica-base.svg"
+                alt=""
+            >
+
+            <object
+                class="map-department"
+                id="mapDepartment"
+                data="media/departments/alta-verapaz.svg"
+                type="image/svg+xml"
+                aria-hidden="true"
+            ></object>
+
+        </div>
+
+
+        <!-- TÍTULO -->
+        <header class="site-title">
+
+            <p>Archivo</p>
+
+            <h1>
+                Geografía<br>
+                de Encuentros
+            </h1>
+
+            <span class="site-subtitle">
+                Pantalla Itinerante
+            </span>
+
+        </header>
+
+
+        <!-- FOTOGRAFÍA DEL DEPARTAMENTO -->
+        <figure class="department-photo" id="departmentPhoto">
+
+            <img
+                id="previewPhoto"
+                src=""
+                alt=""
+            >
+
+        </figure>
+
+
+        <!-- CARRUSEL -->
+        <nav class="department-carousel" aria-label="Departamentos">
+
+            <p class="carousel-label">
+                Departamentos
+            </p>
+
+
+            <div class="carousel-window">
+
+                <!-- 01 -->
+                <a
+                    class="department"
+                    href="pages/peten.html"
+                    data-id="peten"
+                    data-photo="media/home/peten.jpg"
+                >
+                    Petén
+                </a>
+
+
+                <!-- 02 -->
+                <a
+                    class="department"
+                    href="pages/huehuetenango.html"
+                    data-id="huehuetenango"
+                    data-photo="media/home/huehuetenango.jpg"
+                >
+                    Huehuetenango
+                </a>
+
+
+                <!-- 03 -->
+                <a
+                    class="department"
+                    href="pages/quiche.html"
+                    data-id="quiche"
+                    data-photo="media/home/quiche.jpg"
+                >
+                    Quiché
+                </a>
+
+
+                <!-- 04 -->
+                <a
+                    class="department"
+                    href="pages/alta-verapaz.html"
+                    data-id="alta-verapaz"
+                    data-photo="media/home/alta-verapaz.jpg"
+                >
+                    Alta Verapaz
+                </a>
+
+
+                <!-- 05 -->
+                <a
+                    class="department"
+                    href="pages/izabal.html"
+                    data-id="izabal"
+                    data-photo="media/home/izabal.jpg"
+                >
+                    Izabal
+                </a>
+
+
+                <!-- 06 -->
+                <a
+                    class="department"
+                    href="pages/san-marcos.html"
+                    data-id="san-marcos"
+                    data-photo="media/home/san-marcos.jpg"
+                >
+                    San Marcos
+                </a>
+
+
+                <!-- 07 -->
+                <a
+                    class="department"
+                    href="pages/totonicapan.html"
+                    data-id="totonicapan"
+                    data-photo="media/home/totonicapan.jpg"
+                >
+                    Totonicapán
+                </a>
+
+
+                <!-- 08 -->
+                <a
+                    class="department"
+                    href="pages/solola.html"
+                    data-id="solola"
+                    data-photo="media/home/solola.jpg"
+                >
+                    Sololá
+                </a>
+
+
+                <!-- 09 -->
+                <a
+                    class="department"
+                    href="pages/baja-verapaz.html"
+                    data-id="baja-verapaz"
+                    data-photo="media/home/baja-verapaz.jpg"
+                >
+                    Baja Verapaz
+                </a>
+
+
+                <!-- 10 -->
+                <a
+                    class="department department-unavailable"
+                    aria-disabled="true"
+                    data-id="zacapa"
+                    data-photo=""
+                >
+                    Zacapa
+                </a>
+
+
+                <!-- 11 -->
+                <a
+                    class="department"
+                    href="pages/quetzaltenango.html"
+                    data-id="quetzaltenango"
+                    data-photo="media/home/quetzaltenango.jpg"
+                >
+                    Quetzaltenango
+                </a>
+
+
+                <!-- 12 -->
+                <a
+                    class="department"
+                    href="pages/chimaltenango.html"
+                    data-id="chimaltenango"
+                    data-photo="media/home/chimaltenango.jpg"
+                >
+                    Chimaltenango
+                </a>
+
+
+                <!-- 13 -->
+                <a
+                    class="department"
+                    href="pages/guatemala.html"
+                    data-id="guatemala"
+                    data-photo="media/home/guatemala.jpg"
+                >
+                    Guatemala
+                </a>
+
+
+                <!-- 14 -->
+                <a
+                    class="department department-unavailable"
+                    aria-disabled="true"
+                    data-id="el-progreso"
+                    data-photo=""
+                >
+                    El Progreso
+                </a>
+
+
+                <!-- 15 -->
+                <a
+                    class="department"
+                    href="pages/sacatepequez.html"
+                    data-id="sacatepequez"
+                    data-photo="media/home/sacatepequez.jpg"
+                >
+                    Sacatepéquez
+                </a>
+
+
+                <!-- 16 -->
+                <a
+                    class="department department-unavailable"
+                    aria-disabled="true"
+                    data-id="suchitepequez"
+                    data-photo=""
+                >
+                    Suchitepéquez
+                </a>
+
+
+                <!-- 17 -->
+                <a
+                    class="department department-unavailable"
+                    aria-disabled="true"
+                    data-id="chiquimula"
+                    data-photo=""
+                >
+                    Chiquimula
+                </a>
+
+
+                <!-- 18 -->
+                <a
+                    class="department department-unavailable"
+                    aria-disabled="true"
+                    data-id="retalhuleu"
+                    data-photo=""
+                >
+                    Retalhuleu
+                </a>
+
+
+                <!-- 19 -->
+                <a
+                    class="department department-unavailable"
+                    aria-disabled="true"
+                    data-id="jalapa"
+                    data-photo=""
+                >
+                    Jalapa
+                </a>
+
+
+                <!-- 20 -->
+                <a
+                    class="department"
+                    href="pages/escuintla.html"
+                    data-id="escuintla"
+                    data-photo="media/home/escuintla.jpg"
+                >
+                    Escuintla
+                </a>
+
+
+                <!-- 21 -->
+                <a
+                    class="department"
+                    href="pages/santa-rosa.html"
+                    data-id="santa-rosa"
+                    data-photo=""
+                >
+                    Santa Rosa
+                </a>
+
+
+                <!-- 22 -->
+                <a
+                    class="department"
+                    href="pages/jutiapa.html"
+                    data-id="juliapa"
+                    data-photo="media/home/jutiapa.jpg"
+                >
+                    Jutiapa
+                </a>
+
+            </div>
+
+
+            <!-- CONTROLES -->
+            <div class="carousel-controls">
+
+                <button
+                    class="carousel-arrow carousel-arrow-up"
+                    id="previousDepartment"
+                    type="button"
+                    aria-label="Departamento anterior"
+                >
+                    ↑
+                </button>
+
+                <button
+                    class="carousel-arrow carousel-arrow-down"
+                    id="nextDepartment"
+                    type="button"
+                    aria-label="Siguiente departamento"
+                >
+                    ↓
+                </button>
+
+                <span class="carousel-help">
+                    para explorar
+                </span>
+
+            </div>
+
+        </nav>
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

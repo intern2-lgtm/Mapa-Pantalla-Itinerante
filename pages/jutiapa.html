@@ -1,0 +1,223 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jutiapa | Geografía de Encuentros</title>
+
+    <link rel="stylesheet" href="../css/departament-pages.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- HEADER -->
+        <header class="header">
+
+            <a href="../index.html" class="back-link">
+                ← Geografía de Encuentros
+            </a>
+
+            <h1>Jutiapa</h1>
+
+        </header>
+
+
+        <main class="layout">
+
+            <!-- FUNCIONES -->
+            <section class="events">
+
+                <p class="section-title">
+                    Funciones realizadas
+                </p>
+
+
+                <!-- EVENTO 1 -->
+                <article
+                    class="event-card"
+                    data-location="jutiapa-2021"
+                    data-photo=""
+                    data-host="HUXI HURAK LI NA ALTEPET XINCA"
+                    data-language="Xinca"
+                    data-film="La Llorona"
+                    data-director="Jayro Bustamante"
+                    data-country="Guatemala"
+                >
+
+                    <span class="year">2021</span>
+
+                    <h2>
+                        Gira Pantalla Itinerante OXFAM
+                    </h2>
+
+                    <p class="place">
+                        Jutiapa
+                    </p>
+
+                </article>
+
+
+                <!-- EVENTO 2 -->
+                <article
+                    class="event-card"
+                    data-location="aldea-la-cuesta-jutiapa"
+                    data-photo="../media/photos/jutiapa/aldea.jpg"
+                    data-host="Richelieu, Escuela Oficial Rural Mixta, Aldea La Cuesta"
+                    data-language="Xinca"
+                    data-film="Richeliu"
+                    data-director="Pier-Philippe Chevigny"
+                    data-country="Canadá"
+                >
+
+                    <span class="year">2024</span>
+
+                    <h2>
+                        Gira Richelieu Jutiapa
+                    </h2>
+
+                    <p class="place">
+                        Aldea La Cuesta, Jutiapa
+                    </p>
+
+                </article>
+
+
+                <!-- DETALLES DEL EVENTO -->
+                <aside
+                    class="event-details"
+                    aria-live="polite"
+                    aria-hidden="true"
+                >
+
+                    <p data-detail-row="host">
+                        <span>Anfitrión</span>
+                        <strong data-detail="host"></strong>
+                    </p>
+
+                    <p data-detail-row="language">
+                        <span>Idioma de la región</span>
+                        <strong data-detail="language"></strong>
+                    </p>
+
+                    <p data-detail-row="film">
+                        <span>Película</span>
+                        <strong data-detail="film"></strong>
+                    </p>
+
+                    <p data-detail-row="director">
+                        <span>Director</span>
+                        <strong data-detail="director"></strong>
+                    </p>
+
+                    <p data-detail-row="country">
+                        <span>País</span>
+                        <strong data-detail="country"></strong>
+                    </p>
+
+                    <button
+                        class="event-details-back"
+                        type="button"
+                        aria-label="Volver a funciones realizadas"
+                    >
+                        <span aria-hidden="true">←</span>
+                        Volver a funciones
+                    </button>
+
+                </aside>
+
+            </section>
+
+
+            <!-- MAPA -->
+            <section class="map-panel">
+
+                <div class="map-wrapper">
+
+                    <svg
+                        class="map-svg"
+                        viewBox="0 0 559.31 385.53"
+                        aria-label="Mapa de Jutiapa"
+                    >
+
+                        <defs>
+
+                            <!-- MÁSCARA DEL DEPARTAMENTO -->
+                            <mask
+                                id="departmentMask"
+                                maskUnits="userSpaceOnUse"
+                                x="0"
+                                y="0"
+                                width="559.31"
+                                height="385.53"
+                                mask-type="alpha"
+                            >
+
+                                <image
+                                    href="../media/departments/jutiapa-mask.svg"
+                                    x="0"
+                                    y="0"
+                                    width="559.31"
+                                    height="385.53"
+                                    preserveAspectRatio="none"
+                                />
+
+                            </mask>
+
+                        </defs>
+
+
+                        <!-- BASE DEL MAPA -->
+                        <rect
+                            class="map-fill"
+                            x="0"
+                            y="0"
+                            width="559.31"
+                            height="385.53"
+                            mask="url(#departmentMask)"
+                        />
+
+
+                        <!-- FOTOGRAFÍAS -->
+                        <g
+                            class="photos-layer"
+                            mask="url(#departmentMask)"
+                        >
+                            <g class="location-photos"></g>
+                        </g>
+
+
+                        <!-- LÍNEAS DE CONEXIÓN -->
+                        <g class="connections-layer">
+                            <g class="connection-lines"></g>
+                        </g>
+
+
+                        <!-- MARCADORES -->
+                        <g class="locations-layer">
+                            <g class="location-markers"></g>
+                        </g>
+
+                    </svg>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- JAVASCRIPT COMPARTIDO -->
+    <script src="../js/departament-pages.js"></script>
+
+</body>
+</html>

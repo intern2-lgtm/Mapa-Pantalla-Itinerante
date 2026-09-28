@@ -1,0 +1,284 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quetzaltenango | Geografía de Encuentros</title>
+
+    <link rel="stylesheet" href="../css/departament-pages.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- HEADER -->
+        <header class="header">
+            <a href="../index.html" class="back-link">
+                ← Geografía de Encuentros
+            </a>
+
+            <h1>Quetzaltenango</h1>
+        </header>
+
+
+        <main class="layout">
+
+            <!-- FUNCIONES -->
+            <section class="events">
+
+                <p class="section-title">
+                    Funciones realizadas
+                </p>
+
+
+                <!-- EVENTO 1 -->
+                <article
+                    class="event-card"
+                    data-location="quetzaltenango-2022-jose"
+                    data-photo="../media/photos/quetzaltenango/mcd22.jpg"
+                    data-host="Visibles, Vidas Paralelas, GAX"
+                    data-language="K&#x27;iche&#x27;"
+                    data-film="José"
+                    data-director="Li Cheng"
+                    data-country="Estados Unidos"
+                >
+                    <span class="year">2022</span>
+
+                    <h2>
+                        Muestra de Cine Diverso I Regional
+                    </h2>
+
+                    <p class="place">
+                        Quetzaltenango
+                    </p>
+                </article>
+
+
+                <!-- EVENTO 2 -->
+                <article
+                    class="event-card"
+                    data-location="quetzaltenango-2022-lallorona"
+                    data-photo=""
+                    data-host="Asociación Metáfora"
+                    data-language="K&#x27;iche&#x27;"
+                    data-film="La Llorona"
+                    data-director="Jayro Bustamante"
+                    data-country="Guatemala"
+                >
+                    <span class="year">2022</span>
+
+                    <h2>
+                        Festival Internacional de Poesía de Quetzaltenango
+                    </h2>
+
+                    <p class="place">
+                        Quetzaltenango
+                    </p>
+                </article>
+
+
+                <!-- EVENTO 3 -->
+                <article
+                    class="event-card"
+                    data-location="quetzaltenango-2024-almamula"
+                    data-photo="../media/photos/quetzaltenango/mcd3-2.jpg"
+                    data-host="VISIBLES"
+                    data-language="K&#x27;iche&#x27;"
+                    data-film="Almamula|Sueño en Otro Idioma"
+                    data-director="Juan Sebastian Torales|Ernesto Contreras"
+                    data-country="Argentina|México"
+                >
+                    <span class="year">2024</span>
+
+                    <h2>
+                        Muestra de Cine Diverso III
+                    </h2>
+
+                    <p class="place">
+                        Quetzaltenango
+                    </p>
+                </article>
+
+
+                <!-- EVENTO 4 -->
+                <article
+                    class="event-card"
+                    data-location="quetzaltenango-2025-montanas"
+                    data-photo="../media/photos/quetzaltenango/montanas.jpg"
+                    data-host="Universidad Rafael Landívar y Plaza Pública"
+                    data-language="K&#x27;iche&#x27;"
+                    data-film="Cuando Las Montañas Tiemblan"
+                    data-director="Pamela Yates"
+                    data-country="Estados Unidos"
+                >
+                    <span class="year">2025</span>
+
+                    <h2>
+                        Gira 40 años Cuando Las Montañas Tiemblan
+                    </h2>
+
+                    <p class="place">
+                        Quetzaltenango
+                    </p>
+                </article>
+
+
+                <!-- EVENTO 5 -->
+                <article
+                    class="event-card"
+                    data-location="xela-2025-diverso"
+                    data-photo="../media/photos/quetzaltenango/mcd4.jpg"
+                    data-host="Parque Intercultural y GAXS"
+                    data-language="K&#x27;iche&#x27;"
+                    data-film="La felicidad en la que vivo|Angelita|Puto Paraíso"
+                    data-director="Carlos Morales|Sergio Ramirez|Alejandro Serratos"
+                    data-country="Guatemala|México"
+                >
+                    <span class="year">2025</span>
+
+                    <h2>
+                        Muestra de Cine Diverso
+                    </h2>
+
+                    <p class="place">
+                        Xela
+                    </p>
+                </article>
+
+
+                <!-- DETALLES DEL EVENTO -->
+                <aside
+                    class="event-details"
+                    aria-live="polite"
+                    aria-hidden="true"
+                >
+
+                    <p data-detail-row="host">
+                        <span>Anfitrión</span>
+                        <strong data-detail="host"></strong>
+                    </p>
+
+                    <p data-detail-row="language">
+                        <span>Idioma de la región</span>
+                        <strong data-detail="language"></strong>
+                    </p>
+
+                    <p data-detail-row="film">
+                        <span>Película</span>
+                        <strong data-detail="film"></strong>
+                    </p>
+
+                    <p data-detail-row="director">
+                        <span>Director</span>
+                        <strong data-detail="director"></strong>
+                    </p>
+
+                    <p data-detail-row="country">
+                        <span>País</span>
+                        <strong data-detail="country"></strong>
+                    </p>
+
+                    <button
+                        class="event-details-back"
+                        type="button"
+                        aria-label="Volver a funciones realizadas"
+                    >
+                        <span aria-hidden="true">←</span>
+                        Volver a funciones
+                    </button>
+
+                </aside>
+
+            </section>
+
+
+            <!-- MAPA -->
+            <section class="map-panel">
+
+                <div class="map-wrapper">
+
+                    <svg
+                        class="map-svg"
+                        viewBox="0 0 559.31 385.53"
+                        aria-label="Mapa de Quetzaltenango"
+                    >
+
+                        <defs>
+
+                            <!-- MÁSCARA DEL DEPARTAMENTO -->
+                            <mask
+                                id="departmentMask"
+                                maskUnits="userSpaceOnUse"
+                                x="0"
+                                y="0"
+                                width="559.31"
+                                height="385.53"
+                                mask-type="alpha"
+                            >
+                                <image
+                                    href="../media/departments/quetzaltenango-mask.svg"
+                                    x="0"
+                                    y="0"
+                                    width="559.31"
+                                    height="385.53"
+                                    preserveAspectRatio="none"
+                                />
+                            </mask>
+
+                        </defs>
+
+
+                        <!-- BASE DEL MAPA -->
+                        <rect
+                            class="map-fill"
+                            x="0"
+                            y="0"
+                            width="559.31"
+                            height="385.53"
+                            mask="url(#departmentMask)"
+                        />
+
+
+                        <!-- FOTOGRAFÍAS -->
+                        <g
+                            class="photos-layer"
+                            mask="url(#departmentMask)"
+                        >
+                            <g class="location-photos"></g>
+                        </g>
+
+
+                        <!-- LÍNEAS DE CONEXIÓN -->
+                        <g class="connections-layer">
+                            <g class="connection-lines"></g>
+                        </g>
+
+
+                        <!-- MARCADORES -->
+                        <g class="locations-layer">
+                            <g class="location-markers"></g>
+                        </g>
+
+                    </svg>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- JAVASCRIPT COMPARTIDO -->
+    <script src="../js/departament-pages.js"></script>
+
+</body>
+</html>

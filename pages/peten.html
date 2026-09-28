@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Petén | Geografía de Encuentros</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/departament-pages.css"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body>
+
+<div class="page">
+
+
+    <!-- =========================================
+         CABECERA
+    ========================================== -->
+
+    <header class="header">
+
+        <a
+            href="../index.html"
+            class="back-link"
+        >
+            ← Geografía de Encuentros
+        </a>
+
+        <h1>Petén</h1>
+
+    </header>
+
+
+
+    <!-- =========================================
+         CONTENIDO
+    ========================================== -->
+
+    <main class="layout">
+
+
+        <!-- =====================================
+             FUNCIONES
+        ====================================== -->
+
+        <section class="events">
+
+            <p class="section-title">
+                Funciones realizadas
+            </p>
+
+
+            <!-- =================================
+                 FUNCIÓN 1
+            ================================== -->
+
+            <article
+                class="event-card"
+
+                data-location="san-jose"
+
+                data-photo="../media/photos/peten/san-jose.jpg"
+
+                data-host="Hotel Bahia Taitza y ACOFOP"
+
+                data-language="Español"
+
+                data-film="Mujeres en la Biosfera Maya|La Llorona"
+
+                data-director="Fundación Ixcanul|Jayro Bustamante"
+
+                data-country="Guatemala|Guatemala"
+            >
+
+                <span class="year">
+                    2023
+                </span>
+
+                <h2>
+                    Proyección La Llorona San José
+                </h2>
+
+                <p class="place">
+                    San José
+                </p>
+
+            </article>
+
+
+
+            <!-- =================================
+                 FUNCIÓN 2
+            ================================== -->
+
+            <article
+                class="event-card"
+
+                data-location="uaxactun"
+
+                data-photo="../media/photos/peten/uaxactun.jpg"
+
+                data-host="OMYC Uaxactún"
+
+                data-language="Español"
+
+                data-film="Mujeres en la Biosfera Maya|La Llorona"
+
+                data-director="Fundación Ixcanul|Jayro Bustamante"
+
+                data-country="Guatemala|Guatemala"
+            >
+
+                <span class="year">
+                    2023
+                </span>
+
+                <h2>
+                    Proyección La Llorona en Uaxactun
+                </h2>
+
+                <p class="place">
+                    Uaxactun
+                </p>
+
+            </article>
+
+
+
+            <!-- =================================
+                 DETALLES
+            ================================== -->
+
+            <aside
+                class="event-details"
+                aria-live="polite"
+                aria-hidden="true"
+            >
+
+                <p data-detail-row="host">
+
+                    <span>
+                        Anfitrión
+                    </span>
+
+                    <strong data-detail="host"></strong>
+
+                </p>
+
+
+                <p data-detail-row="language">
+
+                    <span>
+                        Idioma de la región
+                    </span>
+
+                    <strong data-detail="language"></strong>
+
+                </p>
+
+
+                <p data-detail-row="film">
+
+                    <span>
+                        Película
+                    </span>
+
+                    <strong data-detail="film"></strong>
+
+                </p>
+
+
+                <p data-detail-row="director">
+
+                    <span>
+                        Director
+                    </span>
+
+                    <strong data-detail="director"></strong>
+
+                </p>
+
+
+                <p data-detail-row="country">
+
+                    <span>
+                        País
+                    </span>
+
+                    <strong data-detail="country"></strong>
+
+                </p>
+
+
+                <button
+                    class="event-details-back"
+                    type="button"
+                    aria-label="Volver a funciones realizadas"
+                >
+
+                    <span aria-hidden="true">
+                        ←
+                    </span>
+
+                    Volver a funciones
+
+                </button>
+
+            </aside>
+
+        </section>
+
+
+
+        <!-- =====================================
+             MAPA
+        ====================================== -->
+
+        <section class="map-panel">
+
+            <div class="map-wrapper">
+
+
+                <svg
+                    class="map-svg"
+                    viewBox="0 0 559.31 385.53"
+                    aria-label="Mapa de Petén"
+                    preserveAspectRatio="xMidYMid meet"
+                >
+
+
+                    <!-- =================================
+                         MÁSCARA DEL DEPARTAMENTO
+                    ================================== -->
+
+                    <defs>
+
+                        <mask
+                            id="departmentMask"
+
+                            maskUnits="userSpaceOnUse"
+
+                            x="0"
+                            y="0"
+
+                            width="559.31"
+                            height="385.53"
+
+                            mask-type="alpha"
+                        >
+
+                            <image
+                                href="../media/departments/peten-mask.svg"
+
+                                x="0"
+                                y="0"
+
+                                width="559.31"
+                                height="385.53"
+
+                                preserveAspectRatio="none"
+                            />
+
+                        </mask>
+
+                    </defs>
+
+
+
+                    <!-- =================================
+                         MAPA NEGRO
+                    ================================== -->
+
+                    <rect
+                        class="map-fill"
+
+                        x="0"
+                        y="0"
+
+                        width="559.31"
+                        height="385.53"
+
+                        mask="url(#departmentMask)"
+                    />
+
+
+
+                    <!-- =================================
+                         FOTOGRAFÍAS
+                         
+                         Esta capa está RECORTADA
+                         por la máscara.
+                    ================================== -->
+
+                    <g
+                        class="photos-layer"
+                        mask="url(#departmentMask)"
+                    >
+
+                        <g class="location-photos"></g>
+
+                    </g>
+
+
+
+                    <!-- =================================
+                         LÍNEAS
+                         
+                         Se mantiene para Alta Verapaz.
+                    ================================== -->
+
+                    <g class="connections-layer">
+
+                        <g class="connection-lines"></g>
+
+                    </g>
+
+
+
+                    <!-- =================================
+                         MARCADORES
+                         
+                         Se mantiene para Alta Verapaz.
+                    ================================== -->
+
+                    <g class="locations-layer">
+
+                        <g class="location-markers"></g>
+
+                    </g>
+
+
+                </svg>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+
+<script src="../js/departament-pages.js"></script>
+
+</body>
+
+</html>
