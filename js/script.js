@@ -20,6 +20,9 @@ const previousDepartmentButton =
 const nextDepartmentButton =
     document.getElementById("nextDepartment");
 
+const departmentCarousel =
+    document.querySelector(".department-carousel");
+
 
 /* ==================================================
 CONFIGURACIÓN DE MAPAS
@@ -492,6 +495,201 @@ departments.forEach(
         );
     }
 );
+
+
+/* ==================================================
+GESTO TÁCTIL
+================================================== */
+
+/*
+El carrusel permite cambiar de departamento
+deslizando el dedo sobre las palabras.
+
+Swipe hacia arriba:
+    siguiente departamento
+
+Swipe hacia abajo:
+    departamento anterior
+*/
+
+let touchStartY = 0;
+let touchStartX = 0;
+
+let touchEndY = 0;
+let touchEndX = 0;
+
+let touchLocked = false;
+
+
+/* --------------------------------------
+DISTANCIA MÍNIMA DEL SWIPE
+-------------------------------------- */
+
+const swipeThreshold = 35;
+
+
+/* --------------------------------------
+INICIO DEL GESTO
+-------------------------------------- */
+
+if (departmentCarousel) {
+
+    departmentCarousel.addEventListener(
+        "touchstart",
+        function (event) {
+
+            if (!event.touches.length) {
+                return;
+            }
+
+            const touch =
+                event.touches[0];
+
+            touchStartY =
+                touch.clientY;
+
+            touchStartX =
+                touch.clientX;
+
+            touchEndY =
+                touch.clientY;
+
+            touchEndX =
+                touch.clientX;
+
+            touchLocked = false;
+
+        },
+        {
+            passive: true
+        }
+    );
+
+
+    /* --------------------------------------
+    MOVIMIENTO DEL DEDO
+    -------------------------------------- */
+
+    departmentCarousel.addEventListener(
+        "touchmove",
+        function (event) {
+
+            if (!event.touches.length) {
+                return;
+            }
+
+            const touch =
+                event.touches[0];
+
+            touchEndY =
+                touch.clientY;
+
+            touchEndX =
+                touch.clientX;
+
+        },
+        {
+            passive: true
+        }
+    );
+
+
+    /* --------------------------------------
+    FINAL DEL GESTO
+    -------------------------------------- */
+
+    departmentCarousel.addEventListener(
+        "touchend",
+        function () {
+
+            if (touchLocked) {
+                return;
+            }
+
+            const deltaY =
+                touchEndY -
+                touchStartY;
+
+            const deltaX =
+                touchEndX -
+                touchStartX;
+
+
+            /* --------------------------------------
+            EVITAR GESTOS CASI HORIZONTALES
+            -------------------------------------- */
+
+            if (
+                Math.abs(deltaX) >
+                Math.abs(deltaY)
+            ) {
+
+                return;
+            }
+
+
+            /* --------------------------------------
+            COMPROBAR DISTANCIA
+            -------------------------------------- */
+
+            if (
+                Math.abs(deltaY) <
+                swipeThreshold
+            ) {
+
+                return;
+            }
+
+
+            /* --------------------------------------
+            BLOQUEAR HASTA TERMINAR EL CAMBIO
+            -------------------------------------- */
+
+            touchLocked = true;
+
+
+            /* --------------------------------------
+            SWIPE HACIA ARRIBA
+            -------------------------------------- */
+
+            if (
+                deltaY < 0
+            ) {
+
+                nextDepartment();
+
+            }
+
+
+            /* --------------------------------------
+            SWIPE HACIA ABAJO
+            -------------------------------------- */
+
+            else {
+
+                previousDepartment();
+            }
+
+
+            /* --------------------------------------
+            DESBLOQUEAR
+            -------------------------------------- */
+
+            setTimeout(
+                function () {
+
+                    touchLocked = false;
+
+                },
+                450
+            );
+
+        },
+        {
+            passive: true
+        }
+    );
+}
 
 
 /* ==================================================
