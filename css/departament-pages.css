@@ -891,9 +891,7 @@ button.event-details-back span {
   }
 
 
-  /* ------------------------------------------
-     CABECERA
-  ------------------------------------------ */
+  /* CABECERA */
 
   .header {
 
@@ -916,9 +914,7 @@ button.event-details-back span {
   }
 
 
-  /* ------------------------------------------
-     LAYOUT
-  ------------------------------------------ */
+  /* LAYOUT */
 
   .layout {
 
@@ -940,9 +936,7 @@ button.event-details-back span {
   }
 
 
-  /* ------------------------------------------
-     FUNCIONES
-  ------------------------------------------ */
+  /* FUNCIONES */
 
   .events {
 
@@ -971,9 +965,7 @@ button.event-details-back span {
   }
 
 
-  /* ------------------------------------------
-     TARJETAS
-  ------------------------------------------ */
+  /* TARJETAS */
 
   .event-card {
 
@@ -1000,9 +992,7 @@ button.event-details-back span {
   }
 
 
-  /* ------------------------------------------
-     DETALLES
-  ------------------------------------------ */
+  /* DETALLES */
 
   .event-details {
 
@@ -1010,9 +1000,7 @@ button.event-details-back span {
   }
 
 
-  /* ------------------------------------------
-     MAPA
-  ------------------------------------------ */
+  /* MAPA */
 
   .map-panel {
 
@@ -1134,9 +1122,7 @@ button.event-details-back span {
   }
 
 
-  /* ------------------------------------------
-     CABECERA
-  ------------------------------------------ */
+  /* CABECERA */
 
   .header {
 
@@ -1167,9 +1153,7 @@ button.event-details-back span {
   }
 
 
-  /* ------------------------------------------
-     LAYOUT
-  ------------------------------------------ */
+  /* LAYOUT */
 
   .layout {
 
@@ -1191,9 +1175,7 @@ button.event-details-back span {
   }
 
 
-  /* ------------------------------------------
-     FUNCIONES
-  ------------------------------------------ */
+  /* FUNCIONES */
 
   .events {
 
@@ -1219,6 +1201,9 @@ button.event-details-back span {
 
       overscroll-behavior:
           contain;
+
+      -webkit-overflow-scrolling:
+          touch;
   }
 
 
@@ -1232,9 +1217,7 @@ button.event-details-back span {
   }
 
 
-  /* ------------------------------------------
-     TARJETAS
-  ------------------------------------------ */
+  /* TARJETAS */
 
   .event-card {
 
@@ -1292,9 +1275,30 @@ button.event-details-back span {
   }
 
 
-  /* ------------------------------------------
-     DETALLES
-  ------------------------------------------ */
+  /* =======================================
+     FICHA ABIERTA
+  ======================================= */
+
+  .events.is-showing-details
+  .event-details {
+
+      /*
+       * La ficha puede crecer todo lo necesario.
+       * El scroll pertenece a .events, no a la ficha.
+       */
+
+      max-height: none;
+
+      margin-top: 17px;
+
+      overflow: visible;
+
+      opacity: 1;
+
+      transform:
+          translateY(0);
+  }
+
 
   .event-details {
 
@@ -1303,15 +1307,6 @@ button.event-details-back span {
       margin-right: 5px;
 
       gap: 10px;
-  }
-
-
-  .events.is-showing-details
-  .event-details {
-
-      max-height: 1000px;
-
-      margin-top: 17px;
   }
 
 
@@ -1335,9 +1330,7 @@ button.event-details-back span {
   }
 
 
-  /* ------------------------------------------
-     CRÉDITOS
-  ------------------------------------------ */
+  /* CRÉDITOS */
 
   .detail-credits {
 
@@ -1347,9 +1340,7 @@ button.event-details-back span {
   }
 
 
-  /* ------------------------------------------
-     MAPA
-  ------------------------------------------ */
+  /* MAPA */
 
   .map-panel {
 
@@ -1380,6 +1371,10 @@ button.event-details-back span {
       overflow: visible;
 
       animation: none;
+
+      background: var(--background);
+
+      z-index: 5;
   }
 
 
@@ -1455,9 +1450,7 @@ button.event-details-back span {
   }
 
 
-  /* ------------------------------------------
-     FUNCIONES
-  ------------------------------------------ */
+  /* FUNCIONES */
 
   .section-title {
 
@@ -1501,12 +1494,12 @@ button.event-details-back span {
   .event-details {
 
       margin-left: 22px;
+
+      margin-right: 4px;
   }
 
 
-  /* ------------------------------------------
-     MAPA
-  ------------------------------------------ */
+  /* MAPA */
 
   .map-panel {
 
